@@ -5,7 +5,12 @@ from collections import Counter
 import emoji
 
 extract = URLExtract()
+import nltk
 
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt', quiet=True)
 def fetch_stats(selected_user,df):
 
     if selected_user != 'Overall':
