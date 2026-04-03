@@ -6,3 +6,6 @@ emoji==2.11.1
 wordcloud==1.9.3
 numpy==1.26.4
 urlextract==1.8.0
+regex
+textblob
+nltk
